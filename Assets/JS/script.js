@@ -9,18 +9,21 @@ var passwordLength = parseInt(prompt('How long do you want your password to be?'
 
 var passwordGenerated = []
 
-if(confirm('Would you like symbols?')){
+if (confirm('Would you like symbols?')) {
     passwordGenerated.push(symbols)
-} 
-if(confirm('Would you like numbers?')){
+}
+if (confirm('Would you like numbers?')) {
     passwordGenerated.push(numbers)
 }
-if(confirm('Would you like letters?')){
+if (confirm('Would you like letters?')) {
     passwordGenerated.push(letters)
-} 
+}
 console.log(passwordLength, passwordGenerated);
 
-for(var i = 0; i < passwordLength; i++){
-    var passwordRandom = Math.floor(Math.random() * passwordGenerated.length)
-    console.log(passwordRandom);
+for (var i = 0; i < passwordLength; i++) {
+    var randomPassword = Math.floor(Math.random() * passwordGenerated.length);
+    var randomPasswordPicker = Math.floor(Math.random() * passwordGenerated[randomPassword].length);
+    
+    
+    console.log(randomPassword, randomPasswordPicker)
 }
