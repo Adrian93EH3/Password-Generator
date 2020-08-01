@@ -59,9 +59,15 @@ function generatePassword(lower, upper, number, symbol, length) {
     }
 
     // Create a loop to generate random characters until max value selected for password is met
-	for(let i=0; i<length; i+=typesCount) {
-		typesArr.forEach(type => {
-			const funcName = Object.keys(type)[0];
-			generatedPassword += randomFunc[funcName]();
-		});
-	}
+    for (let i = 0; i < length; i += typesCount) {
+        typesArr.forEach(type => {
+            const funcName = Object.keys(type)[0];
+            generatedPassword += randomFunc[funcName]();
+        });
+    }
+
+    // displays password
+    const finalPassword = generatedPassword.slice(0, length);
+
+    return finalPassword;
+}
