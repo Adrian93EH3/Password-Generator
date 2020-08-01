@@ -8,6 +8,7 @@ var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
 var passwordLength = parseInt(prompt('How long do you want your password to be?'))
 
 var passwordGenerated = []
+var randomArray = []
 
 if (confirm('Would you like symbols?')) {
     passwordGenerated.push(symbols)
@@ -23,7 +24,8 @@ console.log(passwordLength, passwordGenerated);
 for (var i = 0; i < passwordLength; i++) {
     var randomPassword = Math.floor(Math.random() * passwordGenerated.length);
     var randomPasswordPicker = Math.floor(Math.random() * passwordGenerated[randomPassword].length);
-    
-    
-    console.log(randomPassword, randomPasswordPicker)
+    var random = passwordGenerated[randomPassword][randomPasswordPicker]
+    randomArray.push(random)
+    console.log(randomPassword, randomPasswordPicker, random)
 }
+console.log(randomArray)
