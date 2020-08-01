@@ -19,3 +19,8 @@ if(confirm('Would you like letters?')){
     passwordGenerated.push(letters)
 } 
 console.log(passwordLength, passwordGenerated);
+
+for(var i = 0; i < passwordLength; i++){
+    var passwordRandom = Math.floor(Math.random() * passwordGenerated.length)
+    console.log(passwordRandom);
+}
