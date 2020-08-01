@@ -70,7 +70,8 @@ input[type=checkbox] {
 	cursor: pointer;
 	font-size: 16px;
 	padding: 8px 12px;
-	background-color: #eee;
+    background-color: #eee;
+    margin-top: 20px;
 }
 
 .btn-large {
