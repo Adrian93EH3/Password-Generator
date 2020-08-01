@@ -15,3 +15,7 @@ const randomFunc = {
 	symbol: getRandomSymbol
 }
 
+// chooses lowercase characters from ASCII list 97~122 aka a~z
+function getRandomLower() {
+	return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
