@@ -19,3 +19,8 @@ const randomFunc = {
 function getRandomLower() {
 	return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
+
+// chooses uppercase characters from ASCII list 65~90 aka A~Z
+function getRandomUpper() {
+	return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
