@@ -7,3 +7,8 @@ var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
 
 var passwordLength = parseInt(prompt('How long do you want your password to be?'))
 
+var passwordGenerated = []
+
+if(confirm('Would you like symbols?')){
+    passwordGenerated.push(symbols)
+}
