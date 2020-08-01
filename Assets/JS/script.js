@@ -14,5 +14,8 @@ if(confirm('Would you like symbols?')){
 } 
 if(confirm('Would you like numbers?')){
     passwordGenerated.push(numbers)
+}
+if(confirm('Would you like letters?')){
+    passwordGenerated.push(letters)
 } 
 console.log(passwordLength, passwordGenerated);
