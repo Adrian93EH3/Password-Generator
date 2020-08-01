@@ -20,4 +20,5 @@ THEN the password is either displayed in an alert or written to the page
 
 # Project
 Deployed GitHub Pages Site: https://adrian93eh3.github.io/Password-Generator/
+
 Screenshot of how project should look should you fork/copy the code for yourself: https://prnt.sc/tse844
