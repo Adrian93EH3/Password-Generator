@@ -24,3 +24,8 @@ function getRandomLower() {
 function getRandomUpper() {
 	return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
+
+// chooses numbers from ASCII list 48~57 aka 0-9
+function getRandomNumber() {
+	return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+}
