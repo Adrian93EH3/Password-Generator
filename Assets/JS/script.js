@@ -12,6 +12,7 @@ var passwordLength = parseInt(prompt('How long do you want your password to be?'
 
 var passwordGenerated = []
 var randomArray = []
+var randomString = ''
 
 if (confirm('Would you like symbols?')) {
     passwordGenerated.push(symbols)
@@ -32,6 +33,7 @@ for (var i = 0; i < passwordLength; i++) {
     var randomPasswordPicker = Math.floor(Math.random() * passwordGenerated[randomPassword].length);
     var random = passwordGenerated[randomPassword][randomPasswordPicker]
     randomArray.push(random)
+    randomString += random
     console.log(randomPassword, randomPasswordPicker, random)
 }
 console.log(randomArray)
